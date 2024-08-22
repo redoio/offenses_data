@@ -2,10 +2,10 @@ cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 authors:
   - name: "Redo.io"
-title: "cdcr-prison-pop"
+title: "cdcr-offenses-data"
 version: 1.0.0
 type: data 
-url: "https://github.com/redoio/prison_pop"
+url: "https://github.com/redoio/offenses_data"
 keywords:
   - california
   - population demographics
