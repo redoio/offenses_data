@@ -48,7 +48,7 @@ Files: `current_commitments.csv` `current_commitments.xlsx`
 `case_number`	| str | Case number of the individual's offense |
 `sentence_from_abstract_of_judgement` | str | Length of the sentence in text form: life without parole, life with parole, 4 years, etc. |
 `offense` | str | Offense number from the California criminal code (penal code, vehicular code, other) that the incarcerated person is currently serving time for. |
-`offense_description`	| str | Text description or details about the controlling offense. |
+`offense_description`	| str | Text description or details about the offense. |
 `offense_begin_date`	| datetime | Date on which the offense was committed |
 `offense_end_date`	| datetime | Date on which the offense was committed |
 `in_prison`	| str | Specifies whether the offense was committed in prison or not. This could be a fight with another incarcerated person, defying the order or command of an officer, not following the rules of the facility or prison in any way |
@@ -67,7 +67,7 @@ Files: `prior_commitments.csv` `prior_commitments.xlsx`
 `case_number`	| str | Case number of the individual's offense |
 `sentence_from_abstract_of_judgement` | str | Length of the sentence in text form: life without parole, life with parole, 4 years, etc. |
 `offense` | str | Offense number from the California criminal code (penal code, vehicular code, other) that the incarcerated person served time for and completed their sentence. |
-`offense_description`	| str | Text description or details about the controlling offense |
+`offense_description`	| str | Text description or details about the offense |
 `offense_begin_date`	| datetime | Date on which the offense was committed |
 `offense_end_date`	| datetime | Date on which the offense was committed |
 `in_prison`	| str | Specifies whether the offense was committed in prison or not. This could be a fight with another incarcerated person, defying the order or command of an officer, not following the rules of the facility or prison in any way |
