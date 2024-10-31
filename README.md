@@ -15,6 +15,16 @@ If you make use of our dataset(s), please cite our work as follows:
 
 This cdcr-offenses-data repository is made available under the Open Database License: http://opendatacommons.org/licenses/odbl/1.0/ by Redo.io. Any rights in individual contents of the database are licensed under the Database Contents License: http://opendatacommons.org/licenses/dbcl/1.0/
 
+# Access 
+
+Our datasets are publicly available and downloadable. For data previews and exploration, you can access the same demographics.csv, current_commitments.csv and prior_commitments.csv data on data.world (log in required).
+## `data.world` <img src= "https://github.com/user-attachments/assets/55d79e7d-fece-4b5a-a78d-2a87bb4a8601" width = "3%" height = "3%">
+
+Links:<br>
+https://data.world/redoio<br>
+https://data.world/redoio/ca-prison-sentences<br>
+https://data.world/redoio/ca-prison-former-sentences<br> 
+
 # Data Dictionary 
 
 ## Demographics 
