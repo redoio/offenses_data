@@ -33,7 +33,7 @@ Files: `demographics.csv` `demographics.xlsx`
 
 | variable | type | description |
 | ------------ | ------------------- | --------- |
-`cdcno`	| str | Unique md5 hash identifier for each individual in the CDCR (California Department of Corrections and Rehabilitation) prison system. Individual is incarcerated or imprisoned in any one of the state's prisons as of December 2023. |
+`cdcno`	| str | Unique md5 hash identifier for each individual in the CDCR (California Department of Corrections and Rehabilitation) prison system. Individual is incarcerated or imprisoned in state custody as of December 2023. Note: This data set includes individuals housed in an institution, on temporary release, or in a non-CDCR institution (excluding parolees). Therefore, individuals serving prison sentences in county jails are also included. |
 `ethnicity`	| str | Ethnicity or race of the incarcerated person (White, Black, Asian, Hispanic, Pacific Islander, etc.) |
 `controlling_offense`	| str | Offense number from the California criminal code (penal code, vehicular code, other) that the incarcerated person is currently serving time for, i.e. main offense that the person is sentenced for hence it "controls" their incarceration (PC187, PC664, PC214(a), etc.) |
 `description`	| str | Text description or details about the controlling offense |
@@ -62,7 +62,7 @@ Files: `current_commitments.csv` `current_commitments.xlsx`
 `offense_begin_date`	| datetime | Date on which the offense was committed |
 `offense_end_date`	| datetime | Date on which the offense was committed |
 `in_prison`	| str | Specifies whether the offense was committed in prison or not. This could be a fight with another incarcerated person, defying the order or command of an officer, not following the rules of the facility or prison in any way |
-`offense_category`	| str | Specifies the nature of the offense (drug related, property related, crimes against a person) |
+`offense_category`	| str | Specifies the nature of the offense (drug related, property related, crimes against a person, case enhancement) |
 `offense_time_with_enhancement` | str | Total months of the sentence taking into account additional months added due to enhancements. For example, a robbery offense may result in a sentence length of 10 years. A robbery with a firearm (enhancement) could result in a sentence of 10 years plus a few additional years. |
 `relationship` | str | Specifies whether the sentence was served concurrently, i.e. in parallel to other sentences or if the sentence is being served individually, i.e. no overlap with other sentences |
 
@@ -81,7 +81,7 @@ Files: `prior_commitments.csv` `prior_commitments.xlsx`
 `offense_begin_date`	| datetime | Date on which the offense was committed |
 `offense_end_date`	| datetime | Date on which the offense was committed |
 `in_prison`	| str | Specifies whether the offense was committed in prison or not. This could be a fight with another incarcerated person, defying the order or command of an officer, not following the rules of the facility or prison in any way |
-`offense_category`	| str | Specifies the nature of the offense (drug related, property related, crimes against a person) |
+`offense_category`	| str | Specifies the nature of the offense (drug related, property related, crimes against a person, case enhancement) |
 `offense_time_with_enhancement` | str | Total months of the sentence taking into account additional months added due to enhancements. For example, a robbery offense may result in a sentence length of 10 years. A robbery with a firearm (enhancement) could result in a sentence of 10 years plus a few additional years. |
 `relationship` | str | Specifies whether the sentence was served concurrently, i.e. in parallel to other sentences or if the sentence is being served individually, i.e. no overlap with other sentences |
 `release_date`	| str | Date on which the individual was released from prison after they finished serving the sentence. Since this is a prior offense, it is no longer on the individual's list of current offenses, which means they have served the full sentence stipulated by the court |
