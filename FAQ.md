@@ -14,12 +14,10 @@
 12. [Can CDCR provide the full ERPD/MEPD dates (JAN 2024, FEB 2025, etc.)?](#question-can-cdcr-provide-the-full-erpdmepd-dates-jan-2024-feb-2025-etc)
 
 #### `Question` The structure of the CDCR ID is not recognizable to me. Why is that?
-`Answer` The CDCR IDs are hashed using an md5 hash algorithm. In simple terms, though the prison sentences data is collected through the California Public Records Act (CPRA), we added an additional anonymization layer to protect incarcerated individuals' privacy. 
-All individual names are hidden from public view. Additionally, their CDCR IDs are hashed, 
-i.e. mapped to a new unique 10-character identifier that conceals the original value but remains consistent across all datasets: demographics, current commitments and prior commitments.
+`Answer` The CDCR IDs are hashed using an md5 hash algorithm. In simple terms, though the prison sentences data is collected through the California Public Records Act (CPRA), we added an additional anonymization layer to protect incarcerated individuals' privacy. All individual names are hidden from public view. Additionally, their CDCR IDs are hashed, i.e. mapped to a new unique 10-character identifier that conceals the original value but remains consistent across all datasets: demographics, current commitments and prior commitments.
 
 #### `Question` I found a compelling case but I cannot learn more about the individual using an anonymized CDCR ID. What should I do? 
-`Answer` Please contact us with your request and we will be happy to provide you the individual's or cohort's original CDCR ID(s) and personal name(s) we have on file.
+`Answer` Please contact us with your request and we will be happy to provide you with the individual(s) original CDCR ID(s) and personal name(s) we have on file.
 
 #### `Question` I noticed that some sentences are missing case numbers. Why are they not available? 
 `Answer` Unfortunately, CDCR will not disclose certain information under the California Public Records Act (CPRA) despite our best efforts to collect full and complete information about prison sentences. 
@@ -46,15 +44,13 @@ Code of Federal Regulations title 45, sections 160.103, 164.502(a), 164.508(a)(1
 Pursuant to Government Code sections 7927.705 and 7922.000, Penal Code 290.45, and WIC 827, these data exclude identifying information pertaining to offenders under the age of 18, where disclosure is prohibited by law, and those who CDCR has determined that the release of their information would create an unreasonable risk of danger to themselves.
 
 #### `Question` My county has an existing data sharing agreement with the state. Can Redo.io help me analyze the datasets CDCR sends us? 
-`Answer` Absolutely. We are happy to build custom solutions for your needs and use cases. Our public facing tool is meant to be a general purpose resource for an initial exploratory analysis. Please contact us with your request and we will be happy to support you.\
+`Answer` Absolutely. We are happy to build custom solutions for your needs and use cases. Our public facing tool is meant to be a general purpose resource for an initial exploratory analysis. Please contact us with your request and we will be happy to support you.
 
 #### `Question` My county does not have an existing data sharing agreement with the state. But we have several data needs and questions. Can Redo.io support us in these efforts?
 `Answer` Absolutely. If our existing tools and datasets are insufficient for your needs, we are happy to work with you to develop solutions that best fit your objectives. Please contact us with your request and we will be happy to support you.
                                                             
 #### `Question` The structure of the CDCR ID is not recognizable to me. Why is that?
-`Answer` The CDCR IDs are hashed using an md5 hash algorithm. In simple terms, though the prison sentences data is collected through the California Public Records Act (CPRA), we added an additional anonymization layer to protect incarcerated individuals' privacy. 
-All individual names are hidden from public view. Additionally, their CDCR IDs are hashed, 
-i.e. mapped to a new unique 10-character identifier that conceals the original value but remains consistent across all datasets: demographics, current commitments and prior commitments.
+`Answer` The CDCR IDs are hashed using an md5 hash algorithm. In simple terms, though the prison sentences data is collected through the California Public Records Act (CPRA), we added an additional anonymization layer to protect incarcerated individuals' privacy. All individual names are hidden from public view. Additionally, their CDCR IDs are hashed, i.e. mapped to a new unique 10-character identifier that conceals the original value but remains consistent across all datasets: demographics, current commitments and prior commitments.
 
 #### `Question` I found a compelling case but I cannot learn more about the individual using an anonymized CDCR ID. What should I do? 
 `Answer` Please contact us with your request and we will be happy to provide you the individual's or cohort's original CDCR ID(s) and personal name(s) we have on file.
@@ -82,13 +78,13 @@ Code of Federal Regulations title 45, sections 160.103, 164.502(a), 164.508(a)(1
 Pursuant to Government Code sections 7927.705 and 7922.000, Penal Code 290.45, and WIC 827, these data exclude identifying information pertaining to offenders under the age of 18, where disclosure is prohibited by law, and those who CDCR has determined that the release of their information would create an unreasonable risk of danger to themselves.
 
 #### `Question` My county has an existing data sharing agreement with the state. Can Redo.io help me analyze the datasets CDCR sends us? 
-`Answer` Absolutely. We are happy to build custom solutions for your needs and use cases. Our public facing tool is meant to be a general purpose resource for an initial exploratory analysis. Please contact us with your request and we will be happy to support you.\
+`Answer` Absolutely. We are happy to build custom solutions for your needs and use cases. Our public facing tool is meant to be a general purpose resource for an initial exploratory analysis. Please contact us with your request and we will be happy to support you.
 
 #### `Question` My county does not have an existing data sharing agreement with the state. But we have several data needs and questions. Can Redo.io support us in these efforts?
 `Answer` Absolutely. If our existing tools and datasets are insufficient for your needs, we are happy to work with you to develop solutions that best fit your objectives. Please contact us with your request and we will be happy to support you.
 
 #### `Question` Are individuals serving prison sentences or CDCR commitments in county jails included in the dataset?
-`Answer` Yes, this data set includes individuals serving prison sentences in county jail. The cohort for the current commits, prior commits and demographics include individuals “housed in an institution, on temporary release, or in a non-CDCR institution (excluding parolees)
+`Answer` Yes, this data set includes individuals serving prison sentences in county jail. The cohort for the current commits, prior commits and demographics include individuals housed in an institution, on temporary release, or in a non-CDCR institution (excluding parolees).
 
 #### `Question` Why it is not possible to share information on programming, milestones achieved and rehabilitation credits? This information does not compromise individual privacy, HIPAA protections, or put individuals at risk in any way or form.
 `Answer` CDCR states that they are unable to provide responsive records pertaining to specific milestone and rehabilitation credits per Penal Code sections 11075, 11076, and 13102; Government Code section 7927.705, as these data are considered Criminal Offender Record Information (CORI).
