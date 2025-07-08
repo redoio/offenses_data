@@ -17,7 +17,7 @@
 15. [How is the `Offense Begin Date` and `Offense End Date` determined? Under what circumstances are these dates different? ](#question-how-is-the-offense-begin-date-and-offense-end-date-determined-under-what-circumstances-are-these-dates-different)
 16. [Is the expected release date the sum of the `Offense End Date` and the `Aggregate Sentence in Months` variables for determinately sentenced individuals? ](#question-is-the-expected-release-date-the-sum-of-the-offense-end-date-and-the-aggregate-sentence-in-months-variables-for-determinately-sentenced-individuals)
 17. [How is the `Aggregate Sentence in Months` variable calculated and reported? ](#question-how-is-the-aggregate-sentence-in-months-variable-calculated-and-reported)
-18. [Under what circumstances do CDCR numbers for the same individual change?](#question-under-what-circumstances-do-cdcr-numbers-for-the-same-individual-change)
+18. [Under what circumstances does the CDCR ID for an individual change?](#question-under-what-circumstances-does-the-cdcr-id-for-an-individual-change)
 
 #### `Question` The structure of the CDCR ID is not recognizable to me. Why is that?
 `Answer` We anonymize the original or raw CDCR IDs using an md5 hash algorithm. In simple terms, though our prison sentences data is collected under the California Public Records Act (CPRA), we added an additional anonymization layer to protect incarcerated individuals' privacy. All individual names are hidden from public view. Additionally, their CDCR IDs are hashed, i.e. mapped to a new unique 10-character identifier that conceals the original value but remains consistent across all datasets: demographics, current commitments and prior commitments.
@@ -112,7 +112,7 @@ Though our CPRA requests to CDCR include all of the aforementioned variables (an
 
 `Answer` CDCR states that the `Aggregate Sentence in Months` variable reflects the total sentence imposed, which include all offenses and any offense enhancements and/or case enhancements across all cases for the prison term, and does not include commitments from prior prison terms. 
  
-#### `Question` Under what circumstances do CDCR numbers for the same individual change?
+#### `Question` Under what circumstances does the CDCR ID for an individual change?
 
 `Answer` An individual can have multiple CDCR numbers. A CDCR number would be reused if an individual was released to parole and returned to custody while on parole. A new CDCR number is issued when an individual returns to CDCR after having been discharged from under CDCR’s jurisdiction, or a person identifies as a different gender than previously and is housed at an institution appropriate for the new identity. Therefore, we cannot be certain that an individual regardless of the number of releases, paroles, commitments, etc. is always given the same CDCR ID.
 
