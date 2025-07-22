@@ -7,7 +7,7 @@ Note: Data and analyses in this repository are fully independent of the Three St
 
 If you make use of our dataset(s), please cite our work as follows: 
 
-"Redo.io. cdcr-offenses-data (Version 1.0.0) [Dataset]. https://github.com/redoio/offenses_data"
+"Redo.io. cdcr-offenses-data (Version 1.0.0) [Dataset]. https://github.com/redoio/offenses data"
 
 # License 
 
@@ -17,7 +17,7 @@ This cdcr-offenses-data repository is made available under the Open Database Lic
 
 # Access 
 
-Our datasets are publicly available and downloadable. For data previews and exploration, you can access the same demographics.csv, current_commitments.csv and prior_commitments.csv data on data.world (log in required).
+Our datasets are publicly available and downloadable. For data previews and exploration, you can access the same demographics.csv, current commitments.csv and prior commitments.csv data on data.world (log in required).
 
 Links:<br>
 https://data.world/redoio<br>
@@ -34,17 +34,17 @@ Files: `demographics.csv` `demographics.xlsx`
 | ------------ | ------------------- | --------- |
 `cdcno`	| str | Unique md5 hash identifier for each individual in the CDCR (California Department of Corrections and Rehabilitation) prison system. Individual is incarcerated or imprisoned in state custody as of December 2023. Note: This data set includes individuals housed in an institution, on temporary release, or in a non-CDCR institution (excluding parolees). Therefore, individuals serving prison sentences in county jails are also included. |
 `ethnicity`	| str | Ethnicity or race of the incarcerated person (White, Black, Asian, Hispanic, Pacific Islander, etc.) |
-`controlling_offense`	| str | Offense number from the California criminal code (penal code, vehicular code, other) that the incarcerated person is currently serving time for, i.e. main offense that the person is sentenced for hence it "controls" their incarceration (PC187, PC664, PC214(a), etc.) |
+`controlling offense`	| str | Offense number from the California criminal code (penal code, vehicular code, other) that the incarcerated person is currently serving time for, i.e. main offense that the person is sentenced for hence it "controls" their incarceration (PC187, PC664, PC214(a), etc.) |
 `description`	| str | Text description or details about the controlling offense |
-`offense_begin_date`	| datetime | Date on which the offense was committed |
-`offense_end_date`	| datetime | Date on which the offense was committed |
-`controlling_case_number`	| str | Case number of the individual's controlling offense |
-`controlling_case_sentencing_county`	| str | County or geographical location where the incarcerated individual was sentenced for their offense. County where the case was deliberated with a judge, defense and prosecutor and the sentence term and length was decided. County that has the authority to decide whether to resentence the individual or provide any other form of relief. 
-`sentence_type` |	str | Specifies whether the offense is a second strike or third strike or something else. Indicates the number of serious felonies that the individual committed and has served time for. Third strike felony carries a minimum sentence of 25 years to life. |
-`aggregate_sentence_in_months`	| int | Total length of the sentence in months. Numerical count that can be converted to years, decades, etc.<br>Note: Sentences of the type "Condemned" carry a sentence length of 100,000 months or 1,000,000 months. |
-`offense_category`	| str | Specifies the nature of the offense (drug related, property related, crimes against a person) |
-`erpd_mepd_month_and_year`	| str | Earliest Possible Release Date (EPRD): date determinately-sentenced offenders will be released based on the sentence imposed by the court, less any applicable credits; Minimum Eligible Parole Date (MEPD): date indeterminately-sentenced offenders (i.e., persons sentenced to life with the possibility of parole, or “lifers”) are eligible for parole consideration by the Parole Board based on the sentence imposed by the court, less any applicable credits |
-`current_location`	| str | Name of the prison facility where the person is incarcerated (one of CDCR's state prisons - San Quentin, CA Institution for Men, CA Central Women's Facility, etc.) |
+`offense begin date`	| datetime | Date on which the offense was committed |
+`offense end date`	| datetime | Date on which the offense was committed |
+`controlling case number`	| str | Case number of the individual's controlling offense |
+`controlling case sentencing county`	| str | County or geographical location where the incarcerated individual was sentenced for their offense. County where the case was deliberated with a judge, defense and prosecutor and the sentence term and length was decided. County that has the authority to decide whether to resentence the individual or provide any other form of relief. 
+`sentence type` |	str | Specifies whether the offense is a second strike or third strike or something else. Indicates the number of serious felonies that the individual committed and has served time for. Third strike felony carries a minimum sentence of 25 years to life. |
+`aggregate sentence in months`	| int | Total length of the sentence in months. Numerical count that can be converted to years, decades, etc.<br>Note: Sentences of the type "Condemned" carry a sentence length of 100,000 months or 1,000,000 months. |
+`offense category`	| str | Specifies the nature of the offense (drug related, property related, crimes against a person) |
+`erpd mepd month and year`	| str | Earliest Possible Release Date (EPRD): date determinately-sentenced offenders will be released based on the sentence imposed by the court, less any applicable credits; Minimum Eligible Parole Date (MEPD): date indeterminately-sentenced offenders (i.e., persons sentenced to life with the possibility of parole, or “lifers”) are eligible for parole consideration by the Parole Board based on the sentence imposed by the court, less any applicable credits |
+`current location`	| str | Name of the prison facility where the person is incarcerated (one of CDCR's state prisons - San Quentin, CA Institution for Men, CA Central Women's Facility, etc.) |
 
 ## Current Commitments 
 
@@ -53,16 +53,16 @@ Files: `current_commitments.csv` `current_commitments.xlsx`
 | variable | type | description |
 | ------------ | ------------------- | --------- |
 `cdcno`	| str | Unique md5 hash identifier for each individual in the CDCR (California Department of Corrections and Rehabilitation) prison system. Individual is incarcerated or imprisoned in any one of the state's prisons as of December 2023. |
-`sentencing_county`	| str | County or geographical location where the incarcerated individual was sentenced for their offense. County where the case was deliberated with a judge, defense and prosecutor and the sentence term and length was decided. | 
-`case_number`	| str | Case number of the individual's offense |
-`sentence_from_abstract_of_judgement` | str | Length of the sentence in text form: life without parole, life with parole, 4 years, etc. |
+`sentencing county`	| str | County or geographical location where the incarcerated individual was sentenced for their offense. County where the case was deliberated with a judge, defense and prosecutor and the sentence term and length was decided. | 
+`case number`	| str | Case number of the individual's offense |
+`sentence from abstract of judgement` | str | Length of the sentence in text form: life without parole, life with parole, 4 years, etc. |
 `offense` | str | Offense number from the California criminal code (penal code, vehicular code, other) that the incarcerated person is currently serving time for. |
-`offense_description`	| str | Text description or details about the offense. |
-`offense_begin_date`	| datetime | Date on which the offense was committed |
-`offense_end_date`	| datetime | Date on which the offense was committed |
-`in_prison`	| str | Specifies whether the offense was committed in prison or not. This could be a fight with another incarcerated person, defying the order or command of an officer, not following the rules of the facility or prison in any way |
-`offense_category`	| str | Specifies the nature of the offense (drug related, property related, crimes against a person, case enhancement) |
-`offense_time_with_enhancement` | str | Total months of the sentence taking into account additional months added due to enhancements. For example, a robbery offense may result in a sentence length of 10 years. A robbery with a firearm (enhancement) could result in a sentence of 10 years plus a few additional years. |
+`offense description`	| str | Text description or details about the offense. |
+`offense begin date`	| datetime | Date on which the offense was committed |
+`offense end date`	| datetime | Date on which the offense was committed |
+`in prison`	| str | Specifies whether the offense was committed in prison or not. This could be a fight with another incarcerated person, defying the order or command of an officer, not following the rules of the facility or prison in any way |
+`offense category`	| str | Specifies the nature of the offense (drug related, property related, crimes against a person, case enhancement) |
+`offense time with enhancement` | str | Total months of the sentence taking into account additional months added due to enhancements. For example, a robbery offense may result in a sentence length of 10 years. A robbery with a firearm (enhancement) could result in a sentence of 10 years plus a few additional years. |
 `relationship` | str | Specifies whether the sentence was served concurrently, i.e. in parallel to other sentences or if the sentence is being served individually, i.e. no overlap with other sentences |
 
 ## Prior Commitments 
@@ -72,18 +72,18 @@ Files: `prior_commitments.csv` `prior_commitments.xlsx`
 | variable | type | description |
 | ------------ | ------------------- | --------- |
 `cdcno`	| str | Unique md5 hash identifier for each individual in the CDCR (California Department of Corrections and Rehabilitation) prison system. Individual is incarcerated or imprisoned in any one of the state's prisons as of December 2023. |
-`sentencing_county`	| str | County or geographical location where the incarcerated individual was sentenced for their offense. County where the case was deliberated with a judge, defense and prosecutor and the sentence term and length was decided. | 
-`case_number`	| str | Case number of the individual's offense |
-`sentence_from_abstract_of_judgement` | str | Length of the sentence in text form: life without parole, life with parole, 4 years, etc. |
+`sentencing county`	| str | County or geographical location where the incarcerated individual was sentenced for their offense. County where the case was deliberated with a judge, defense and prosecutor and the sentence term and length was decided. | 
+`case number`	| str | Case number of the individual's offense |
+`sentence from abstract of judgement` | str | Length of the sentence in text form: life without parole, life with parole, 4 years, etc. |
 `offense` | str | Offense number from the California criminal code (penal code, vehicular code, other) that the incarcerated person served time for and completed their sentence. |
-`offense_description`	| str | Text description or details about the offense |
-`offense_begin_date`	| datetime | Date on which the offense was committed |
-`offense_end_date`	| datetime | Date on which the offense was committed |
-`in_prison`	| str | Specifies whether the offense was committed in prison or not. This could be a fight with another incarcerated person, defying the order or command of an officer, not following the rules of the facility or prison in any way |
-`offense_category`	| str | Specifies the nature of the offense (drug related, property related, crimes against a person, case enhancement) |
-`offense_time_with_enhancement` | str | Total months of the sentence taking into account additional months added due to enhancements. For example, a robbery offense may result in a sentence length of 10 years. A robbery with a firearm (enhancement) could result in a sentence of 10 years plus a few additional years. |
+`offense description`	| str | Text description or details about the offense |
+`offense begin date`	| datetime | Date on which the offense was committed |
+`offense end date`	| datetime | Date on which the offense was committed |
+`in prison`	| str | Specifies whether the offense was committed in prison or not. This could be a fight with another incarcerated person, defying the order or command of an officer, not following the rules of the facility or prison in any way |
+`offense category`	| str | Specifies the nature of the offense (drug related, property related, crimes against a person, case enhancement) |
+`offense time with enhancement` | str | Total months of the sentence taking into account additional months added due to enhancements. For example, a robbery offense may result in a sentence length of 10 years. A robbery with a firearm (enhancement) could result in a sentence of 10 years plus a few additional years. |
 `relationship` | str | Specifies whether the sentence was served concurrently, i.e. in parallel to other sentences or if the sentence is being served individually, i.e. no overlap with other sentences |
-`release_date`	| str | Date on which the individual was released from prison after they finished serving the sentence. Since this is a prior offense, it is no longer on the individual's list of current offenses, which means they have served the full sentence stipulated by the court |
+`release date`	| str | Date on which the individual was released from prison after they finished serving the sentence. Since this is a prior offense, it is no longer on the individual's list of current offenses, which means they have served the full sentence stipulated by the court |
 
 # Frequently Asked Questions 
 
@@ -101,7 +101,7 @@ Files: `prior_commitments.csv` `prior_commitments.xlsx`
 10. [Why it is not possible to share information on programming, milestones achieved and rehabilitation credits? This information does not compromise individual privacy, HIPAA protections, or put individuals at risk in any way or form.](#question-why-it-is-not-possible-to-share-information-on-programming-milestones-achieved-and-rehabilitation-credits-this-information-does-not-compromise-individual-privacy-hipaa-protections-or-put-individuals-at-risk-in-any-way-or-form)
 11. [Can we be certain that there are no errors in the dataset?](#question-can-we-be-certain-that-there-are-no-errors-in-the-dataset)
 12. [Can CDCR provide the full ERPD/MEPD dates (JAN 2024, FEB 2025, etc.)?](#question-can-cdcr-provide-the-full-erpdmepd-dates-jan-2024-feb-2025-etc)
-13. [There are two kinds of enhancements reported in the datasets provided. Some enhancements are available as rows in the prior and current commitments files with `Case Enhancement` listed in the `Offense Category` column. Additionally, there are offense enhancements in the columns `Off_Enh1`, `Off_Enh2`, etc. What are the differences between these enhancement variables? ](#question-there-are-two-kinds-of-enhancements-reported-in-the-datasets-provided-some-enhancements-are-available-as-rows-in-the-prior-and-current-commitments-files-with-case-enhancement-listed-in-the-offense-category-column-additionally-there-are-offense-enhancements-in-the-columns-off_enh1-off_enh2-etc-what-are-the-differences-between-these-enhancement-variables)
+13. [There are two kinds of enhancements reported in the datasets provided. Some enhancements are available as rows in the prior and current commitments files with `Case Enhancement` listed in the `Offense Category` column. Additionally, there are offense enhancements in the columns `Off Enh1`, `Off Enh2`, etc. What are the differences between these enhancement variables? ](#question-there-are-two-kinds-of-enhancements-reported-in-the-datasets-provided-some-enhancements-are-available-as-rows-in-the-prior-and-current-commitments-files-with-case-enhancement-listed-in-the-offense-category-column-additionally-there-are-offense-enhancements-in-the-columns-off enh1-off-enh2-etc-what-are-the-differences-between-these-enhancement-variables)
 14. [The current and prior commitments datasets contain a variable called `Offense Time with Enhancement`. Does this include time for case, sentence or offense enhancements?](#question-the-current-and-prior-commitments-datasets-contain-a-variable-called-offense-time-with-enhancement-does-this-include-time-for-case-sentence-or-offense-enhancements)
 15. [How is the `Offense Begin Date` and `Offense End Date` determined? Under what circumstances are these dates different? ](#question-how-is-the-offense-begin-date-and-offense-end-date-determined-under-what-circumstances-are-these-dates-different)
 16. [Is the expected release date the sum of the `Offense End Date` and the `Aggregate Sentence in Months` variables for determinately sentenced individuals? ](#question-is-the-expected-release-date-the-sum-of-the-offense-end-date-and-the-aggregate-sentence-in-months-variables-for-determinately-sentenced-individuals)
@@ -181,7 +181,7 @@ Though our CPRA requests to CDCR include all of the aforementioned variables (an
 #### `Question` Can CDCR provide the full ERPD/MEPD dates (JAN 2024, FEB 2025, etc.)? 
 `Answer` CDCR states that they cannot provide the full EPRD/MEPD for individuals who are currently incarcerated. 
 
-#### `Question` There are two kinds of enhancements reported in the datasets provided. Some enhancements are available as rows in the prior and current commitments files with `Case Enhancement` listed in the `Offense Category` column. Additionally, there are offense enhancements in the columns `Off_Enh1`, `Off_Enh2`, etc. What are the differences between these enhancement variables? 
+#### `Question` There are two kinds of enhancements reported in the datasets provided. Some enhancements are available as rows in the prior and current commitments files with `Case Enhancement` listed in the `Offense Category` column. Additionally, there are offense enhancements in the columns `Off Enh1`, `Off Enh2`, etc. What are the differences between these enhancement variables? 
 
 `Answer` CDCR states that enhancements reflect additional penalties applied to a sentence. Offense enhancements are directly related to the charge in which the individual was convicted. Case enhancements are related to prior felony convictions or additional case factors not specifically related to the convicted offense.
  
