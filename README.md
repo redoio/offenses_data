@@ -101,11 +101,11 @@ Files: `prior_commitments.csv` `prior_commitments.xlsx`
 10. [Why it is not possible to share information on programming, milestones achieved and rehabilitation credits? This information does not compromise individual privacy, HIPAA protections, or put individuals at risk in any way or form.](#question-why-it-is-not-possible-to-share-information-on-programming-milestones-achieved-and-rehabilitation-credits-this-information-does-not-compromise-individual-privacy-hipaa-protections-or-put-individuals-at-risk-in-any-way-or-form)
 11. [Can we be certain that there are no errors in the dataset?](#question-can-we-be-certain-that-there-are-no-errors-in-the-dataset)
 12. [Can CDCR provide the full ERPD/MEPD dates (JAN 2024, FEB 2025, etc.)?](#question-can-cdcr-provide-the-full-erpdmepd-dates-jan-2024-feb-2025-etc)
-13. [There are two kinds of enhancements reported in the datasets provided. Some enhancements are available as rows in the prior and current commitments files with `Case Enhancement` listed in the `Offense Category` column. Additionally, there are offense enhancements in the columns `Off Enh1`, `Off Enh2`, etc. What are the differences between these enhancement variables? ](#question-there-are-two-kinds-of-enhancements-reported-in-the-datasets-provided-some-enhancements-are-available-as-rows-in-the-prior-and-current-commitments-files-with-case-enhancement-listed-in-the-offense-category-column-additionally-there-are-offense-enhancements-in-the-columns-off enh1-off-enh2-etc-what-are-the-differences-between-these-enhancement-variables)
+13. [There are two kinds of enhancements reported in the datasets provided. Some enhancements are available as rows in the prior and current commitments files with `Case Enhancement` listed in the `Offense Category` column. Additionally, there are offense enhancements in the columns `Off Enh1`, `Off Enh2`, etc. What are the differences between these enhancement variables?](#question-there-are-two-kinds-of-enhancements-reported-in-the-datasets-provided-some-enhancements-are-available-as-rows-in-the-prior-and-current-commitments-files-with-case-enhancement-listed-in-the-offense-category-column-additionally-there-are-offense-enhancements-in-the-columns-off-enh1-off-enh2-etc-what-are-the-differences-between-these-enhancement-variables)
 14. [The current and prior commitments datasets contain a variable called `Offense Time with Enhancement`. Does this include time for case, sentence or offense enhancements?](#question-the-current-and-prior-commitments-datasets-contain-a-variable-called-offense-time-with-enhancement-does-this-include-time-for-case-sentence-or-offense-enhancements)
-15. [How is the `Offense Begin Date` and `Offense End Date` determined? Under what circumstances are these dates different? ](#question-how-is-the-offense-begin-date-and-offense-end-date-determined-under-what-circumstances-are-these-dates-different)
-16. [Is the expected release date the sum of the `Offense End Date` and the `Aggregate Sentence in Months` variables for determinately sentenced individuals? ](#question-is-the-expected-release-date-the-sum-of-the-offense-end-date-and-the-aggregate-sentence-in-months-variables-for-determinately-sentenced-individuals)
-17. [How is the `Aggregate Sentence in Months` variable calculated and reported? ](#question-how-is-the-aggregate-sentence-in-months-variable-calculated-and-reported)
+15. [How is the `Offense Begin Date` and `Offense End Date` determined? Under what circumstances are these dates different?](#question-how-is-the-offense-begin-date-and-offense-end-date-determined-under-what-circumstances-are-these-dates-different)
+16. [Is the expected release date the sum of the `Offense End Date` and the `Aggregate Sentence in Months` variables for determinately sentenced individuals?](#question-is-the-expected-release-date-the-sum-of-the-offense-end-date-and-the-aggregate-sentence-in-months-variables-for-determinately-sentenced-individuals)
+17. [How is the `Aggregate Sentence in Months` variable calculated and reported?](#question-how-is-the-aggregate-sentence-in-months-variable-calculated-and-reported)
 18. [Under what circumstances does the CDCR ID for an individual change?](#question-under-what-circumstances-does-the-cdcr-id-for-an-individual-change)
 
 #### `Question` The structure of the CDCR ID is not recognizable to me. Why is that?
@@ -189,15 +189,15 @@ Though our CPRA requests to CDCR include all of the aforementioned variables (an
 
 `Answer` CDCR states that the `Offense Time with Enhancement` is the aggregate time imposed by the court for an offense plus time imposed for any associated offense enhancements.
 
-#### `Question` How is the `Offense Begin Date` and `Offense End Date` determined? Under what circumstances are these dates different? 
+#### `Question` How is the `Offense Begin Date` and `Offense End Date` determined? Under what circumstances are these dates different?
 
 `Answer` CDCR states that the offense begin and end dates reflect two possible scenarios: 1) when the crime occurred over a period of time, or 2) when the record represents multiple counts, the begin date is the earliest offense date and the end date is the last date. In the case of the second scenario, if a record represents more than two counts, not all offense dates are available in CDCR's system of record. 
  
-#### `Question`  Is the expected release date the sum of the `Offense End Date` and the `Aggregate Sentence in Months` variables for determinately sentenced individuals? 
+#### `Question`  Is the expected release date the sum of the `Offense End Date` and the `Aggregate Sentence in Months` variables for determinately sentenced individuals?
 
 `Answer` CDCR states that this is not the case. The release date is calculated based on when the individual’s sentence began and the total sentence imposed, excluding any credits earned for program participation and good behavior while serving their sentence, minus credits lost for rules violations.
 
-#### `Question` How is the `Aggregate Sentence in Months` variable calculated and reported? 
+#### `Question` How is the `Aggregate Sentence in Months` variable calculated and reported?
 
 `Answer` CDCR states that the `Aggregate Sentence in Months` variable reflects the total sentence imposed, which include all offenses and any offense enhancements and/or case enhancements across all cases for the prison term, and does not include commitments from prior prison terms. 
  
