@@ -26,18 +26,10 @@
 `Answer` Please contact us with your request and we will be happy to provide you with the individual(s) original CDCR ID(s) and personal name(s) we have on file.
 
 #### `Question` I noticed that some sentences are missing case numbers. Why are they not available? 
-`Answer` Unfortunately, CDCR will not disclose certain information under the California Public Records Act (CPRA) despite our best efforts to collect full and complete information about prison sentences. 
-We recognize that missing case numbers and CDCR IDs limits the use of our dataset. We are continuing to urge CDCR to provide more complete data to avoid these pitfalls. 
-However, we hope that in instances wherein a case number for a controlling offense is missing, other information on their current and prior commitments may help identify the person in question. 
-Please contact us with your inquiry and we will be happy to assist you further.
-
-#### `Question` How do I cite the data and results? 
-`Answer` Please reference our data, dashboards and analyses as follows: 
-
-Redo.io [Computer software]. (2025). Retrieved from tool.redoio.info
+`Answer` Unfortunately, CDCR will not disclose certain information under the California Public Records Act (CPRA) despite our best efforts to collect full and complete information about prison sentences. We recognize that missing case numbers and CDCR IDs limits the use of our dataset. We are continuing to urge CDCR to provide more complete data to avoid these pitfalls. However, we hope that in instances wherein a case number for a controlling offense is missing, other available information on their current and prior commitments may help identify the person in question. Please contact us with your inquiry and we will be happy to assist you further.
 
 #### `Question` How does this data differ from information acquired via a data sharing agreement? 
-:green-badge[Answer] Our prison sentences data is a subset of the data that CDCR typically provides under a formal data sharing agreement between a county and the state. 
+`Answer` Our prison sentences data is a subset of the data that CDCR typically provides under a formal data sharing agreement between a county and the state. 
 Formal data sharing agreements for prison sentences data typically include sex registration status, mental health level of care, CSRA scores, COMPAS scores, milestones achieved, education credits, gender etc. 
 Though our CPRA requests to CDCR include all of the aforementioned variables (and more), CDCR states that they cannot disclose certain variables due to privacy restrictions in the law. 
 For example, they stated that providing the gender and sex registration status of an individual would be a violation of the Prison Rape Elimination Act (PREA)
@@ -67,7 +59,7 @@ We recognize that missing case numbers and CDCR IDs limits the power of our data
 #### `Question` How do I cite the data and results? 
 `Answer` Please reference our data, dashboards and analyses as follows: 
 
-Redo.io [Computer software]. (2025). Retrieved from tool.redoio.info
+Redo.io [Computer software]. (2026). Retrieved from https://tool.redoio.info
 
 #### `Question` How does this data differ from information acquired via a data sharing agreement? 
 `Answer` Our prison sentences data is a subset of the data that CDCR typically provides under a formal data sharing agreement between a county and the state. 
