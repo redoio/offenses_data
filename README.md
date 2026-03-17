@@ -1,5 +1,5 @@
 # Introduction
-Data on the population currently incarcerated in any of the thirty-five state prisons under the jurisdiction of the California Department of Corrections and Rehabilitation (CDCR) as of December 2023. Information was acquired via the California Public Records Act (CPRA). The Department applied several privacy (health information, age, etc.) related exclusionary criteria to release these records to Redo.io. The CDCR identification numbers are hashed to add another layer of privacy and security. 
+Data on the population currently incarcerated in any of the thirty-five state prisons under the jurisdiction of the California Department of Corrections and Rehabilitation (CDCR) as of December 2023 and April 2025. Information was acquired via the California Public Records Act (CPRA). The Department applied several privacy (health information, age, etc.) related exclusionary criteria to release these records to Redo.io. The CDCR identification numbers are hashed to add another layer of privacy and security. 
 
 Note: Data and analyses in this repository are fully independent of the Three Strikes Project, Stanford University and the Resentencing Data Initiative. This is an open data related effort not supported or related to any of the aforementioned parties.
 
@@ -32,7 +32,7 @@ Files: `demographics.csv` `demographics.xlsx`
 
 | variable | type | description |
 | ------------ | ------------------- | --------- |
-`cdcno`	| str | Unique md5 hash identifier for each individual in the CDCR (California Department of Corrections and Rehabilitation) prison system. Individual is incarcerated or imprisoned in state custody as of December 2023. Note: This data set includes individuals housed in an institution, on temporary release, or in a non-CDCR institution (excluding parolees). Therefore, individuals serving prison sentences in county jails are also included. |
+`cdcno`	| str | Unique md5 hash identifier for each individual in the CDCR (California Department of Corrections and Rehabilitation) prison system. Individual is incarcerated or imprisoned in state custody. Note: This data set includes individuals housed in an institution, on temporary release, or in a non-CDCR institution (excluding parolees). Therefore, individuals serving prison sentences in county jails are also included. |
 `ethnicity`	| str | Ethnicity or race of the incarcerated person (White, Black, Asian, Hispanic, Pacific Islander, etc.) |
 `controlling offense`	| str | Offense number from the California criminal code (penal code, vehicular code, other) that the incarcerated person is currently serving time for, i.e. main offense that the person is sentenced for hence it "controls" their incarceration (PC187, PC664, PC214(a), etc.) |
 `description`	| str | Text description or details about the controlling offense |
@@ -52,7 +52,7 @@ Files: `current_commitments.csv` `current_commitments.xlsx`
 
 | variable | type | description |
 | ------------ | ------------------- | --------- |
-`cdcno`	| str | Unique md5 hash identifier for each individual in the CDCR (California Department of Corrections and Rehabilitation) prison system. Individual is incarcerated or imprisoned in any one of the state's prisons as of December 2023. |
+`cdcno`	| str | Unique md5 hash identifier for each individual in the CDCR (California Department of Corrections and Rehabilitation) prison system. Individual is incarcerated or imprisoned in any one of the state's prisons. |
 `sentencing county`	| str | County or geographical location where the incarcerated individual was sentenced for their offense. County where the case was deliberated with a judge, defense and prosecutor and the sentence term and length was decided. | 
 `case number`	| str | Case number of the individual's offense |
 `sentence from abstract of judgement` | str | Length of the sentence in text form: life without parole, life with parole, 4 years, etc. |
@@ -71,7 +71,7 @@ Files: `prior_commitments.csv` `prior_commitments.xlsx`
 
 | variable | type | description |
 | ------------ | ------------------- | --------- |
-`cdcno`	| str | Unique md5 hash identifier for each individual in the CDCR (California Department of Corrections and Rehabilitation) prison system. Individual is incarcerated or imprisoned in any one of the state's prisons as of December 2023. |
+`cdcno`	| str | Unique md5 hash identifier for each individual in the CDCR (California Department of Corrections and Rehabilitation) prison system. Individual is incarcerated or imprisoned in any one of the state's prisons. |
 `sentencing county`	| str | County or geographical location where the incarcerated individual was sentenced for their offense. County where the case was deliberated with a judge, defense and prosecutor and the sentence term and length was decided. | 
 `case number`	| str | Case number of the individual's offense |
 `sentence from abstract of judgement` | str | Length of the sentence in text form: life without parole, life with parole, 4 years, etc. |
