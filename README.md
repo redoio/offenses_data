@@ -17,12 +17,13 @@ This cdcr-offenses-data repository is made available under the Open Database Lic
 
 # Access 
 
-Our datasets are publicly available and downloadable. For data previews and exploration, you can access the same demographics.csv, current commitments.csv and prior commitments.csv data on data.world (log in required).
+Our datasets are publicly available and downloadable. For data previews and exploration, you can access the same demographics.csv, current commitments.csv and prior commitments.csv data on https://data.world (log in required) and the Harvard Dataverse.
 
 Links:<br>
 https://data.world/redoio<br>
 https://data.world/redoio/ca-prison-sentences<br>
-https://data.world/redoio/ca-prison-former-sentences<br> 
+https://data.world/redoio/ca-prison-former-sentences<br>
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FQCTMSI
 
 # Data Dictionary 
 
