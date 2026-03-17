@@ -7,7 +7,7 @@ Note: Data and analyses in this repository are fully independent of the Three St
 
 If you make use of our dataset(s), please cite our work as follows: 
 
-"Redo.io. cdcr-offenses-data (Version 1.0.0) [Dataset]. https://github.com/redoio/offenses data"
+"Redo.io. cdcr-offenses-data (Version 1.0.0) [Dataset]. https://github.com/redoio/offenses_data"
 
 # License 
 
