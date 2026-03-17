@@ -123,7 +123,7 @@ Please contact us with your inquiry and we will be happy to assist you further.
 #### `Question` How do I cite the data and results? 
 `Answer` Please reference our data, dashboards and analyses as follows: 
 
-Redo.io [Computer software]. (2025). Retrieved from tool.redoio.info
+Redo.io [Computer software]. (2026). Retrieved from https://tool.redoio.info.
 
 #### `Question` How does this data differ from information acquired via a data sharing agreement? 
 :green-badge[Answer] Our prison sentences data is a subset of the data that CDCR typically provides under a formal data sharing agreement between a county and the state. 
@@ -152,11 +152,6 @@ Code of Federal Regulations title 45, sections 160.103, 164.502(a), 164.508(a)(1
 #### `Question` I noticed that some sentences are missing case numbers. Why are they not available? 
 `Answer` Unfortunately, CDCR reduces to disclose some case details under the California Public Records Act (CPRA) despite our best efforts to collect full and complete information about prison sentences. 
 We recognize that missing case numbers and CDCR IDs limits the power of our dataset. We are continuing to urge CDCR to provide more complete information to make our datasets more actionable for attorneys and researchers. Please contact us with your inquiry and we will be happy to assist you further.
-
-#### `Question` How do I cite the data and results? 
-`Answer` Please reference our data, dashboards and analyses as follows: 
-
-Redo.io [Computer software]. (2025). Retrieved from tool.redoio.info
 
 #### `Question` How does this data differ from information acquired via a data sharing agreement? 
 `Answer` Our prison sentences data is a subset of the data that CDCR typically provides under a formal data sharing agreement between a county and the state. 
