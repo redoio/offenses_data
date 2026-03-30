@@ -25,66 +25,72 @@ https://data.world/redoio/ca-prison-sentences<br>
 https://data.world/redoio/ca-prison-former-sentences<br>
 https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FQCTMSI
 
-# Data Dictionary 
+# Data Dictionary
 
-## Demographics 
+## Demographics
 
-Files: `demographics.csv` `demographics.xlsx` 
+Files: `demographics.csv` `demographics.xlsx`<br>
+Versions: `2023` and `2025`
 
-| variable | type | description |
-| ------------ | ------------------- | --------- |
-`cdcno`	| str | Unique md5 hash identifier for each individual in the CDCR (California Department of Corrections and Rehabilitation) prison system. Individual is incarcerated or imprisoned in state custody. Note: This data set includes individuals housed in an institution, on temporary release, or in a non-CDCR institution (excluding parolees). Therefore, individuals serving prison sentences in county jails are also included. |
-`ethnicity`	| str | Ethnicity or race of the incarcerated person (White, Black, Asian, Hispanic, Pacific Islander, etc.) |
-`controlling offense`	| str | Offense number from the California criminal code (penal code, vehicular code, other) that the incarcerated person is currently serving time for, i.e. main offense that the person is sentenced for hence it "controls" their incarceration (PC187, PC664, PC214(a), etc.) |
-`description`	| str | Text description or details about the controlling offense |
-`offense begin date`	| datetime | Date on which the offense was committed |
-`offense end date`	| datetime | Date on which the offense was committed |
-`controlling case number`	| str | Case number of the individual's controlling offense |
-`controlling case sentencing county`	| str | County or geographical location where the incarcerated individual was sentenced for their offense. County where the case was deliberated with a judge, defense and prosecutor and the sentence term and length was decided. County that has the authority to decide whether to resentence the individual or provide any other form of relief. 
-`sentence type` |	str | Specifies whether the offense is a second strike or third strike or something else. Indicates the number of serious felonies that the individual committed and has served time for. Third strike felony carries a minimum sentence of 25 years to life. |
-`aggregate sentence in months`	| int | Total length of the sentence in months. Numerical count that can be converted to years, decades, etc.<br>Note: Sentences of the type "Condemned" carry a sentence length of 100,000 months or 1,000,000 months. |
-`offense category`	| str | Specifies the nature of the offense (drug related, property related, crimes against a person) |
-`erpd mepd month and year`	| str | Earliest Possible Release Date (EPRD): date determinately-sentenced offenders will be released based on the sentence imposed by the court, less any applicable credits; Minimum Eligible Parole Date (MEPD): date indeterminately-sentenced offenders (i.e., persons sentenced to life with the possibility of parole, or “lifers”) are eligible for parole consideration by the Parole Board based on the sentence imposed by the court, less any applicable credits |
-`current location`	| str | Name of the prison facility where the person is incarcerated (one of CDCR's state prisons - San Quentin, CA Institution for Men, CA Central Women's Facility, etc.) |
+| Variable | Type | Description |
+| --- | --- | --- |
+| `cdcno` | str | Unique identifier (MD5 hash) for each individual under CDCR jurisdiction, including those housed in a state prison, temporarily released, or held in a non-CDCR facility. Excludes parolees. Individuals serving CDCR sentences in county jails are included. |
+| `ethnicity` | str | Race or ethnicity of the incarcerated person (e.g., White, Black, Asian, Hispanic, Pacific Islander). |
+| `controlling offense` | str | California penal, vehicular, or other code number for the offense governing the individual's current incarceration (e.g., PC187, PC664, PC214(a)). |
+| `description` | str | Text description of the controlling offense. |
+| `offense begin date` | datetime | Date the controlling offense began. |
+| `offense end date` | datetime | Date the controlling offense ended, if applicable. |
+| `controlling case number` | str | Case number associated with the controlling offense. |
+| `controlling case sentencing county` | str | County where the individual was sentenced for the controlling offense. |
+| `sentence type` | str | Indicates whether the sentence is a second strike, third strike, or other. |
+| `aggregate sentence in months` | int | Total sentence length in months. Note: "Condemned" sentences are recorded as 100,000 or 1,000,000 months. |
+| `offense category` | str | Broad category of the offense (e.g., drug-related, property-related, crimes against a person). |
+| `eprd mepd month and year` | str | For determinate sentences: Earliest Possible Release Date (EPRD), calculated from the court-imposed sentence minus applicable credits. For indeterminate sentences: Minimum Eligible Parole Date (MEPD), the earliest date a "lifer" may be considered for parole. |
+| `current location` | str | Name of the facility where the individual is currently housed. Note: CDCR sentences being served in county jails typically appear as "<County Name> Control Office". |
 
-## Current Commitments 
+---
 
-Files: `current_commitments.csv` `current_commitments.xlsx` 
+## Current Commitments
 
-| variable | type | description |
-| ------------ | ------------------- | --------- |
-`cdcno`	| str | Unique md5 hash identifier for each individual in the CDCR (California Department of Corrections and Rehabilitation) prison system. Individual is incarcerated or imprisoned in any one of the state's prisons. |
-`sentencing county`	| str | County or geographical location where the incarcerated individual was sentenced for their offense. County where the case was deliberated with a judge, defense and prosecutor and the sentence term and length was decided. | 
-`case number`	| str | Case number of the individual's offense |
-`sentence from abstract of judgement` | str | Length of the sentence in text form: life without parole, life with parole, 4 years, etc. |
-`offense` | str | Offense number from the California criminal code (penal code, vehicular code, other) that the incarcerated person is currently serving time for. |
-`offense description`	| str | Text description or details about the offense. |
-`offense begin date`	| datetime | Date on which the offense was committed |
-`offense end date`	| datetime | Date on which the offense was committed |
-`in prison`	| str | Specifies whether the offense was committed in prison or not. This could be a fight with another incarcerated person, defying the order or command of an officer, not following the rules of the facility or prison in any way |
-`offense category`	| str | Specifies the nature of the offense (drug related, property related, crimes against a person, case enhancement) |
-`offense time with enhancement` | str | Total months of the sentence taking into account additional months added due to enhancements. For example, a robbery offense may result in a sentence length of 10 years. A robbery with a firearm (enhancement) could result in a sentence of 10 years plus a few additional years. |
-`relationship` | str | Specifies whether the sentence was served concurrently, i.e. in parallel to other sentences or if the sentence is being served individually, i.e. no overlap with other sentences |
+Files: `current_commitments.csv` `current_commitments.xlsx`
 
-## Prior Commitments 
+| Variable | Type | Description |
+| --- | --- | --- |
+| `cdcno` | str | Unique identifier (MD5 hash) for each individual under CDCR jurisdiction, including those housed in a state prison, temporarily released, or held in a non-CDCR facility. Excludes parolees. Individuals serving CDCR sentences in county jails are included. |
+| `sentencing county` | str | County where the individual was sentenced for this offense. |
+| `case number` | str | Case number associated with this offense. |
+| `sentence from abstract of judgement` | str | Sentence as written in the abstract of judgment. Values include LWOP (Life Without Parole), LWP (Life With Parole), Condemned, or a specific term in years and months. |
+| `offense` | str | California penal, vehicular, or other code number for the offense the individual is currently serving time for. |
+| `offense description` | str | Text description of the offense. |
+| `offense begin date` | datetime | Date the offense began. |
+| `offense end date` | datetime | Date the offense ended, if applicable. |
+| `in prison` | str | Indicates whether the offense was committed while incarcerated. |
+| `offense category` | str | Broad category of the offense (e.g., drug-related, property-related, crimes against a person, case enhancement). |
+| `offense time with enhancement` | str | Total sentence length in months, including any enhancements (e.g., additional years added for use of a firearm during a robbery). |
+| `relationship` | str | Whether this sentence is served concurrently (overlapping with other sentences) or consecutively (no overlap). |
+| `off enh<num>` | str | California penal, vehicular, or other code number for the enhancement associated with the offense. Columns are numbered `off enh1` through `off enh11` and `<num>` is a placeholder for the enhancement count. |
+| `off enh desc<num>` | str | Text description of the enhancement. Columns are numbered `off enh desc1` through `off enh desc11` and `<num>` is a placeholder for the enhancement count. |
+---
 
-Files: `prior_commitments.csv` `prior_commitments.xlsx` 
+## Prior Commitments
 
-| variable | type | description |
-| ------------ | ------------------- | --------- |
-`cdcno`	| str | Unique md5 hash identifier for each individual in the CDCR (California Department of Corrections and Rehabilitation) prison system. Individual is incarcerated or imprisoned in any one of the state's prisons. |
-`sentencing county`	| str | County or geographical location where the incarcerated individual was sentenced for their offense. County where the case was deliberated with a judge, defense and prosecutor and the sentence term and length was decided. | 
-`case number`	| str | Case number of the individual's offense |
-`sentence from abstract of judgement` | str | Length of the sentence in text form: life without parole, life with parole, 4 years, etc. |
-`offense` | str | Offense number from the California criminal code (penal code, vehicular code, other) that the incarcerated person served time for and completed their sentence. |
-`offense description`	| str | Text description or details about the offense |
-`offense begin date`	| datetime | Date on which the offense was committed |
-`offense end date`	| datetime | Date on which the offense was committed |
-`in prison`	| str | Specifies whether the offense was committed in prison or not. This could be a fight with another incarcerated person, defying the order or command of an officer, not following the rules of the facility or prison in any way |
-`offense category`	| str | Specifies the nature of the offense (drug related, property related, crimes against a person, case enhancement) |
-`offense time with enhancement` | str | Total months of the sentence taking into account additional months added due to enhancements. For example, a robbery offense may result in a sentence length of 10 years. A robbery with a firearm (enhancement) could result in a sentence of 10 years plus a few additional years. |
-`relationship` | str | Specifies whether the sentence was served concurrently, i.e. in parallel to other sentences or if the sentence is being served individually, i.e. no overlap with other sentences |
-`release date`	| str | Date on which the individual was released from prison after they finished serving the sentence. Since this is a prior offense, it is no longer on the individual's list of current offenses, which means they have served the full sentence stipulated by the court |
+Files: `prior_commitments.csv` `prior_commitments.xlsx`
+
+| Variable | Type | Description |
+| --- | --- | --- |
+| `cdcno` | str | Unique identifier (MD5 hash) for each individual under CDCR jurisdiction, including those housed in a state prison, temporarily released, or held in a non-CDCR facility. Excludes parolees. Individuals serving CDCR sentences in county jails are included. |
+| `sentencing county` | str | County where the individual was sentenced for this offense. |
+| `case number` | str | Case number associated with this offense. |
+| `sentence from abstract of judgement` | str | Sentence as written in the abstract of judgment. Values include LWOP (Life Without Parole), LWP (Life With Parole), Condemned, or a specific term in years and months. |
+| `offense` | str | California penal, vehicular, or other code number for the offense the individual previously served time for and completed. |
+| `offense description` | str | Text description of the offense. |
+| `offense begin date` | datetime | Date the offense began. |
+| `offense end date` | datetime | Date the offense ended, if applicable. |
+| `in prison` | str | Indicates whether the offense was committed while incarcerated. |
+| `offense category` | str | Broad category of the offense (e.g., drug-related, property-related, crimes against a person, case enhancement). |
+| `offense time with enhancement` | str | Total sentence length in months, including any enhancements (e.g., additional years added for use of a firearm during a robbery). |
+| `relationship` | str | Whether this sentence was served concurrently (overlapping with other sentences) or consecutively (no overlap). |
+| `release date` | str | Date the individual was released upon completing this sentence. |
 
 # Frequently Asked Questions 
 
