@@ -27,10 +27,11 @@ https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FQ
 
 # Data Dictionary
 
+Versions: `2023` and `2025`
+
 ## Demographics
 
 Files: `demographics.csv` `demographics.xlsx`<br>
-Versions: `2023` and `2025`
 
 | Variable | Type | Description |
 | --- | --- | --- |
