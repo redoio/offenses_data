@@ -1,8 +1,6 @@
 # Introduction
 Data on the population currently incarcerated under the California Department of Corrections and Rehabilitation (CDCR) as of December 2023 and April 2025. Information was acquired via the California Public Records Act (CPRA). The Department applied several privacy (health information, age, etc.) related exclusionary criteria to release these records to Redo.io. The CDCR identification numbers are anonymized for an additional layer of privacy and security. 
 
-Note: Data and analyses in this repository are fully independent of the Three Strikes Project, Stanford University and the Resentencing Data Initiative. This is an open data related effort not supported or related to any of the aforementioned parties.
-
 # Citation 
 
 If you make use of our dataset(s), please cite our work as follows: 
