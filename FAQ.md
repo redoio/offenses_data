@@ -18,6 +18,7 @@
 16. [Is the expected release date the sum of the `Offense End Date` and the `Aggregate Sentence in Months` variables for determinately sentenced individuals?](#question-is-the-expected-release-date-the-sum-of-the-offense-end-date-and-the-aggregate-sentence-in-months-variables-for-determinately-sentenced-individuals)
 17. [How is the `Aggregate Sentence in Months` variable calculated and reported?](#question-how-is-the-aggregate-sentence-in-months-variable-calculated-and-reported)
 18. [Under what circumstances does the CDCR ID for an individual change?](#question-under-what-circumstances-does-the-cdcr-id-for-an-individual-change)
+19. [How are non-violent, non-sexual, and non-serious offenders identified?](#question-how-are-non-violent-non-sexual-and-non-serious-offenders-identified)
 
 #### `Question` The structure of the CDCR ID is not recognizable to me. Why is that?
 `Answer` We anonymize the original or raw CDCR IDs using an md5 hash algorithm. In simple terms, though our prison sentences data is collected under the California Public Records Act (CPRA), we added an additional anonymization layer to protect incarcerated individuals' privacy. All individual names are hidden from public view. Additionally, their CDCR IDs are hashed, i.e. mapped to a new unique 10-character identifier that conceals the original value but remains consistent across all datasets: demographics, current commitments and prior commitments.
@@ -107,3 +108,12 @@ Though our CPRA requests to CDCR include all of the aforementioned variables (an
 #### `Question` Under what circumstances does the CDCR ID for an individual change?
 
 `Answer` An individual can have multiple CDCR numbers. A CDCR number would be reused if an individual was released to parole and returned to custody while on parole. A new CDCR number is issued when an individual returns to CDCR after having been discharged from under CDCR’s jurisdiction, or a person identifies as a different gender than previously and is housed at an institution appropriate for the new identity. Therefore, we cannot be certain that an individual regardless of the number of releases, paroles, commitments, etc. is always given the same CDCR ID.
+
+#### `Question` How are non-violent, non-sexual and non-serious offenders identified?
+`Answer` Non-non-non" refers to individuals whose cases are non-violent, non-sexual, and non-serious. We developed criteria for this classification, including offense groups and categorizations for super-strike felonies, registerable sex offenses, violent felonies, and homicide offenses, in collaboration with attorneys from the Three Strikes Project at Stanford Law. A full list of categorized penal codes is available here: https://github.com/redoio/scenarios/blob/main/offense_categories/selection_criteria.xlsx.
+Definitions of the non-non-non group can vary across our platform and can be customized using the Scenario Builder tool. As one example, non-non-non offenders may be defined as those with cases meeting all of the following criteria:<br>
+(a). No current commitments in serious felonies, violent felonies, registerable sex offenses, or super-strike offenses<br>
+(b). No prior commitments in registerable sex offenses or super-strike offenses<br>
+(c). Sentenced to at least 20 years<br>
+(d). Served at least 10 years
+
