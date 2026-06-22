@@ -19,6 +19,13 @@
 17. [How is the `Aggregate Sentence in Months` variable calculated and reported?](#question-how-is-the-aggregate-sentence-in-months-variable-calculated-and-reported)
 18. [Under what circumstances does the CDCR ID for an individual change?](#question-under-what-circumstances-does-the-cdcr-id-for-an-individual-change)
 19. [How are non-violent, non-sexual, and non-serious offenders identified?](#question-how-are-non-violent-non-sexual-and-non-serious-offenders-identified)
+20. [What are the demographics, current commitments, and prior commitments datasets?](#question-what-are-the-demographics-current-commitments-and-prior-commitments-datasets)
+21. [What is CDCR?](#question-what-is-cdcr)
+22. [What do "as of 2023" and "as of 2025" mean?](#question-what-do-as-of-2023-and-as-of-2025-mean)
+23. [Where can the raw datasets be downloaded?](#question-where-can-the-raw-datasets-be-downloaded)
+24. [Are the ethnicity values aligned with CENSUS labels?](#question-are-the-ethnicity-values-aligned-with-census-labels)
+25. [Does Redo.io use AI, and if so, is it safe and how can I learn more?](#question-does-redoio-use-ai-and-if-so-is-it-safe-and-how-can-i-learn-more)
+26. [Do you track user data, and how does the platform protect my privacy?](#question-do-you-track-user-data-and-how-does-the-platform-protect-my-privacy)
 
 #### `Question` The structure of the CDCR ID is not recognizable to me. Why is that?
 `Answer` We anonymize the original or raw CDCR IDs using an md5 hash algorithm. In simple terms, though our prison sentences data is collected under the California Public Records Act (CPRA), we added an additional anonymization layer to protect incarcerated individuals' privacy. All individual names are hidden from public view. Additionally, their CDCR IDs are hashed, i.e. mapped to a new unique 10-character identifier that conceals the original value but remains consistent across all datasets: demographics, current commitments and prior commitments.
@@ -62,7 +69,7 @@ Code of Federal Regulations title 45, sections 160.103, 164.502(a), 164.508(a)(1
 `Answer` CDCR states that they cannot ensure that there are no errors or mistakes in the data reporting as well as their system of record.
 
 #### `Question` Can CDCR provide the full ERPD/MEPD dates (JAN 2024, FEB 2025, etc.)?
-`Answer` CDCR states that they cannot provide the full ERPD/MEPD for individuals who are currently incarcerated.
+`Answer` CDCR states that they can only provide the month and year values of the ERPD/MEPD as opposed to the full date values for individuals who are currently incarcerated.
 
 #### `Question` There are two kinds of enhancements reported in the datasets provided. Some enhancements are available as rows in the prior and current commitments files with `Case Enhancement` listed in the `Offense Category` column. Additionally, there are offense enhancements in the columns `Off Enh1`, `Off Enh2`, etc. What are the differences between these enhancement variables?
 `Answer` CDCR states that enhancements reflect additional penalties applied to a sentence. Offense enhancements are directly related to the charge in which the individual was convicted. Case enhancements are related to prior felony convictions or additional case factors not specifically related to the convicted offense.
@@ -83,10 +90,31 @@ Code of Federal Regulations title 45, sections 160.103, 164.502(a), 164.508(a)(1
 `Answer` An individual can have multiple CDCR numbers. A CDCR number would be reused if an individual was released to parole and returned to custody while on parole. A new CDCR number is issued when an individual returns to CDCR after having been discharged from under CDCR’s jurisdiction, or a person identifies as a different gender than previously and is housed at an institution appropriate for the new identity. Therefore, we cannot be certain that an individual regardless of the number of releases, paroles, commitments, etc. is always given the same CDCR ID.
 
 #### `Question` How are non-violent, non-sexual and non-serious offenders identified?
-`Answer` "Non-non-non" refers to individuals whose cases are non-violent, non-sexual, and non-serious. We developed criteria for this classification, including offense groups and categorizations for super-strike felonies, registerable sex offenses, violent felonies, and homicide offenses, in collaboration with attorneys from the Three Strikes Project at Stanford Law. A full list of categorized penal codes is available here: https://github.com/redoio/scenarios/blob/main/offense_categories/selection_criteria.xlsx.
-Definitions of the non-non-non group can vary across our platform and can be customized using the Scenario Builder tool. As one example, non-non-non offenders may be defined as those with cases meeting all of the following criteria:<br>
-(a). No current commitments in serious felonies, violent felonies, registerable sex offenses, or super-strike offenses<br>
-(b). No prior commitments in registerable sex offenses or super-strike offenses<br>
-(c). Sentenced to at least 20 years<br>
+`Answer` "Non-non-non" refers to individuals whose cases are non-violent, non-sexual, and non-serious. Redo.io developed criteria for this classification, including offense groups and categorizations for super-strike felonies, registerable sex offenses, violent felonies, and homicide offenses, in collaboration with attorneys from the Three Strikes Project at Stanford Law. A full list of categorized penal codes is available here: https://github.com/redoio/scenarios/blob/main/offense_categories/selection_criteria.xlsx.
+Definitions of "non-non-non" offenders differ across our platform and can be customized using the Scenario Builder tool. For example, "non-non-non" offenders may be defined as those with cases meeting all of the following criteria:
+(a). No current commitments in serious felonies, violent felonies, registerable sex offenses, or super-strike offenses
+(b). No prior commitments in registerable sex offenses or super-strike offenses
+(c). Sentenced to at least 20 years
 (d). Served at least 10 years
+
+#### `Question` What are the demographics, current commitments, and prior commitments datasets?
+`Answer` These datasets come from California Public Records Act (CPRA) requests to the California Department of Corrections and Rehabilitation (CDCR). Our prison sentences data is split across three datasets, each capturing a different part of a person's record with CDCR. The demographics dataset contains individual-level characteristics, such as ethnicity, case number, parole dates, and the primary controlling offense. There is exactly one demographics record per person who is currently incarcerated. The current commitments dataset contains all of the commitments a person currently has with CDCR, including the controlling offense, and a person can have multiple current commitment records. The prior commitments dataset contains all of the commitments or sentences a person has already completed, and a person can have multiple prior commitment records; if a person has no prior criminal history, their prior commitments may be empty. In summary, every currently incarcerated person has exactly one record in demographics and one or more records in current commitments, while prior commitments can hold multiple records or none at all, depending on a person's history.
+
+#### `Question` What is CDCR?
+`Answer` CDCR stands for the California Department of Corrections and Rehabilitation, the state agency responsible for operating California's prisons and supervising incarcerated and paroled individuals. Our prison sentences data is collected from CDCR under the California Public Records Act (CPRA).
+
+#### `Question` What do "as of 2023" and "as of 2025" mean?
+`Answer` These labels indicate the snapshot date of each dataset. The year values refer to everyone incarcerated in CDCR custody as of that date, including individuals serving CDCR commitments in county jails. All three datasets, demographics, current commitments, and prior commitments, are available for each date. The 2023 datasets are current as of December 2023, and the 2025 datasets are current as of April 2025.
+
+#### `Question` Where can the raw datasets be downloaded?
+`Answer` The raw datasets are available on the Harvard Dataverse: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FQCTMSI
+
+#### `Question` Are the ethnicity values aligned with CENSUS labels?
+`Answer` No. The ethnicity values in our data are reported by CDCR and do not directly match racial groups used in the U.S. Census. They can, however, be mapped to Census categories (White, Black or African American, American Indian or Alaska Native, Asian, Native Hawaiian or Other Pacific Islander, and Hispanic or Latino).
+
+#### `Question` Does Redo.io use AI, and if so, is it safe and how can I learn more?
+`Answer` Yes, Redo.io uses AI as part of its analytics and tooling. We are committed to using it responsibly and transparently. To learn more about where and how we apply AI, along with the safeguards we have in place, please see the "How We Use AI" page on our platform: https://tool.redoio.info/how_we_use_ai.
+
+#### `Question` Do you track user data, and how does the platform protect my privacy?
+`Answer` We take user privacy seriously and limit the data we collect. For a full explanation of what we do and do not track, and the measures we use to protect your privacy, please see the "How We Use Your Data" page on our platform: https://tool.redoio.info/how_we_use_your_data.
 
