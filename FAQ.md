@@ -26,6 +26,10 @@
 24. [Are the ethnicity values aligned with CENSUS labels?](#question-are-the-ethnicity-values-aligned-with-census-labels)
 25. [Does Redo.io use AI, and if so, is it safe and how can I learn more?](#question-does-redoio-use-ai-and-if-so-is-it-safe-and-how-can-i-learn-more)
 26. [Do you track user data, and how does the platform protect my privacy?](#question-do-you-track-user-data-and-how-does-the-platform-protect-my-privacy)
+27. [Why is the gender of incarcerated individuals not included in the dataset?](#question-why-is-the-gender-of-incarcerated-individuals-not-included-in-the-dataset)
+28. [How are the ethnicity and race values recorded? Are they self-reported?](#question-how-are-the-ethnicity-and-race-values-recorded-are-they-self-reported)
+29. [Are juvenile offenders included in the dataset?](#question-are-juvenile-offenders-included-in-the-dataset)
+30. [Under what circumstances are current or prior commitments excluded from the dataset?](#question-under-what-circumstances-are-current-or-prior-commitments-excluded-from-the-dataset)
 
 #### `Question` The structure of the CDCR ID is not recognizable to me. Why is that?
 `Answer` We anonymize the original or raw CDCR IDs using an md5 hash algorithm. In simple terms, though our prison sentences data is collected under the California Public Records Act (CPRA), we added an additional anonymization layer to protect incarcerated individuals' privacy. All individual names are hidden from public view. Additionally, their CDCR IDs are hashed, i.e. mapped to a new unique 10-character identifier that conceals the original value but remains consistent across all datasets: demographics, current commitments and prior commitments.
@@ -118,3 +122,14 @@ Definitions of "non-non-non" offenders differ across our platform and can be cus
 #### `Question` Do you track user data, and how does the platform protect my privacy?
 `Answer` We take user privacy seriously and limit the data we collect. For a full explanation of what we do and do not track, and the measures we use to protect your privacy, please see the "How We Use Your Data" page on our platform: https://tool.redoio.info/how_we_use_your_data.
 
+#### `Question` Why is the gender of incarcerated individuals not included in the dataset?
+`Answer` CDCR states that gender-related data is exempt from disclosure pursuant to Government Code section 7927.700 in conjunction with California Code of Regulations Title 15, section 3261.2(e), and Government Code section 7927.705.
+
+#### `Question` How are the ethnicity and race values recorded? Are they self-reported?
+`Answer` CDCR states that each time an incarcerated person undergoes Reception Center (RC) processing, they are given the opportunity to provide their self-identified race and ethnicity. If they choose not to provide this information, it is obtained from other sources, such as pre-existing records, the sending jurisdiction, or the California Law Enforcement Telecommunications System (CLETS).
+
+#### `Question` Are juvenile offenders included in the dataset?
+`Answer` Yes. CDCR states that juvenile offenders are included in the dataset, with all of their current and prior commitments listed. However, they are not explicitly identified: their names are hidden and their CDCR identification numbers are masked.
+
+#### `Question` Under what circumstances are current or prior commitments excluded from the dataset?
+`Answer` CDCR states that offenses that were discharged by the court, expunged, resentenced, or vacated and dismissed are excluded from the dataset.
