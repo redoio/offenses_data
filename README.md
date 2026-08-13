@@ -25,7 +25,7 @@ https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FQ
 
 # Data Dictionary
 
-Versions: `2023` and `2025`
+Versions: `2023` `2025` `2026`
 
 ## Demographics
 
@@ -35,6 +35,7 @@ Files: `demographics.csv` `demographics.xlsx`<br>
 | --- | --- | --- | --- |
 | `cdcno` | str | No | Unique identifier (MD5 hash) for each individual under CDCR jurisdiction, including those housed in a state prison, temporarily released, or held in a non-CDCR facility. Excludes parolees. Individuals serving CDCR sentences in county jails are included. |
 | `ethnicity` | str | No | Race or ethnicity of the incarcerated person (e.g., White, Black, Asian, Hispanic, Pacific Islander). |
+| current age | int | No | Age in whole years as reported by CDCR, current as of the date the data was reported. Note: This is a snapshot value, not a fixed attribute. |
 | `controlling offense` | str | No | California penal, vehicular, or other code number for the offense governing the individual's current incarceration (e.g., PC187, PC664, PC214(a)). |
 | `description` | str | No | Text description of the controlling offense. |
 | `offense begin date` | datetime | No | Date the controlling offense began. |
@@ -49,7 +50,8 @@ Files: `demographics.csv` `demographics.xlsx`<br>
 | `aggregate sentence in years` | float | Yes: `aggregate sentence in months` divided by 12 | Total sentence length in years. |
 | `time served` | float | Yes: `today's date` minus `offense end date` | Total sentence length in years that has been completed. Note: This value represents the minimum time served. Because the value is refreshed every 3-4 months, the actual time served at any given point may be greater than what is recorded. |
 | `expected release date` | datetime | Yes: `offense end date` + `aggregate sentence in years` | Possible release date based on sentence length and offense date. |
-
+| `estimated age at offense` | int | Yes: `current age` minus (`date of data release` minus `offense begin date`) | Estimated age in years on the offense begin date. Note: This value carries some uncertainty, because CDCR reports age as a whole number and does not release date of birth. For example, a person recorded as 45 years old may have turned 45 at any point during the past year, so their age at a 2015 offense could have been 34 or 35. |
+| `probable juvenile at offense` | str | Yes: `estimated age at offense` less than 19 | Whether the individual was likely under 19 years old at the time of offense. Note: This reflects an estimate, not a legal determination, and carries the same uncertainty as the age it is based on. For example, a person estimated at 18 at the time of offense may actually have been 17 or 19, so records close to the cutoff may fall on either side. The threshold used here is under 19, which is not the statutory juvenile cutoff in California of under 18. |
 ---
 
 ## Current Commitments
